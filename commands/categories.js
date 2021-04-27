@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const categories = [
+globalThis.categories = [
 	'General knowledge',
 	'Books',
 	'Film',
