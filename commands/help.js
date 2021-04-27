@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
-module.exports = function (msg, args) {
+module.exports = function (msg) {
 	const embed = new Discord.MessageEmbed()
-		.setColor('#00ff00')
+		.setColor('#fafa9e')
 		.setTitle('Помощ')
 		.addField(
 			'Как се стартира quiz?',
@@ -9,7 +9,7 @@ module.exports = function (msg, args) {
 		)
 		.addField(
 			'Как се избира категория за quiz?',
-			'**!sq;n=count;c=category**\n category е име на категория. Например **!sq;n=20;c=general knowledge** ще стартира quiz с 20 въпроса на тема general knowledge. Напишете **!categories** за списък с всички налични категории.'
+			'**!sq;n=count;c=category**\n category е номер на категория. Например **!sq;n=20;c=1** ще стартира quiz с 20 въпроса на тема general knowledge. Напишете **!categories** за списък с всички налични категории.'
 		)
 		.addField(
 			'Как се избира ниво на сложност на въпросите за quiz?',

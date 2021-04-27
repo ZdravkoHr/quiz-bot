@@ -1,5 +1,8 @@
 require('dotenv').config();
 const help = require('./commands/help.js');
+const categories = require('./commands/categories.js');
+const difficulties = require('./commands/difficulties.js');
+const types = require('./commands/types.js');
 const Discord = require('discord.js');
 
 const client = new Discord.Client();
@@ -7,6 +10,9 @@ client.login(process.env.BOT_TOKEN);
 
 const commands = {
 	help,
+	categories,
+	difficulties,
+	types,
 };
 
 client.on('message', msg => {
