@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 module.exports = function (msg, args) {
-	console.log(5);
 	const embed = new Discord.MessageEmbed()
 		.setColor('#00ff00')
 		.setTitle('Помощ')
