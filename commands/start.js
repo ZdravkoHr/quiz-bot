@@ -75,7 +75,7 @@ function askQuestion(msg, questions, index) {
 			return;
 		}
 
-		const firstAnswer = givenAnswers.sort((a, b) => b.order - a.order)[0];
+		const firstAnswer = givenAnswers.sort((a, b) => a.order - b.order)[0];
 		let description = `${firstAnswer.author} успя да отговори вярно на въпроса най-бързо и затова получава 2 точки. \n`;
 		addScore(firstAnswer.author, 2);
 		if (givenAnswers.length === 2) {
