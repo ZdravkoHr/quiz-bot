@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const difficulties = ['easy', 'medium', 'hard'];
+globalThis.difficulties = ['easy', 'medium', 'hard'];
 
 module.exports = function (msg) {
 	const embed = new Discord.MessageEmbed()
