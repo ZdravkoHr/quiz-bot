@@ -126,7 +126,8 @@ function replaceSymbols(string) {
 		.replace(/&aacute;/g, 'a')
 		.replace(/&eacute;/g, 'e')
 		.replace(/&oacute;/g, 'o')
-		.replace(/&iacute;/g, 'i');
+		.replace(/&iacute;/g, 'i')
+		.replace(/&shy;/g, '-');
 }
 
 function addAnswers(embed, question) {
