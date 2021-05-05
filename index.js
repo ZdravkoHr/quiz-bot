@@ -24,7 +24,7 @@ const commands = {
 };
 
 client.on('message', msg => {
-	if (msg.channel.id !== '836561786102218772') return;
+	//if (msg.channel.id !== '836561786102218772') return;
 	if (globalThis.running) {
 		if (msg.author.bot) return;
 		addAnswer(msg);
